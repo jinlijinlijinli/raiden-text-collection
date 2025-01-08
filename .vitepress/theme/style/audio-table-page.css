@@ -1,0 +1,45 @@
+
+/* table td:first-child,
+table th:first-child {
+    white-space: nowrap; 
+} */
+
+
+.audio-tbale {
+    white-space: nowrap; /* 防止内容换行 */
+
+}
+.audio-text-wrapper {
+    display: flex;
+    /* 使用 flex 布局 */
+    align-items: center;
+    /* 确保音频按钮和文字垂直居中对齐 */
+    gap: 10px;
+    /* 按钮和文字之间的间距 */
+}
+
+.audio-cell {
+    flex-shrink: 0;
+    /* 音频按钮固定尺寸，不会因文字内容变化而缩小 */
+}
+
+.text-cell {
+    flex-grow: 1;
+    /* 文字部分自动占据剩余空间 */
+    word-break: break-word;
+    /* 长文字自动换行 */
+    line-height: 1.5;
+    /* 增加行高，优化文字显示效果 */
+}
+
+.audio-cell>* {
+    display: block;
+    /* 确保按钮的外部样式是块级元素 */
+}
+
+.audio-text-wrapper>.audio-cell {
+    min-width: 50px;
+    /* 为按钮部分设置固定最小宽度，避免按钮被压缩 */
+    text-align: center;
+    /* 保证按钮内容居中 */
+}
