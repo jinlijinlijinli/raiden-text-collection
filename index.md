@@ -7,7 +7,7 @@ hero:
   text: "Text Collection"
   tagline: My great project tagline
   image: 
-    src: "/center.png"
+    src: "/public/center.png"
     alt: Collection
   actions:
     - theme: brand

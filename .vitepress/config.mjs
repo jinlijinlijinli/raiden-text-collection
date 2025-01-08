@@ -2,10 +2,10 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/raidencollection/',
+  base: '/raiden-text-collection/',
   //base: '/', 网站部署的路径，默认根目录
   // base: '/vitepress/', //网站部署到github的vitepress这个仓库里
-  head: [["link", { rel: "icon", href: "/logo.png" }]],
+  head: [["link", { rel: "icon", href: "/public/logo.png" }]],
   lang: 'zh-CN',
   title: "雷电将军文本收录",
   description: "Text Collection",
